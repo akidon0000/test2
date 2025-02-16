@@ -1,0 +1,50 @@
+name: ' Question Template'
+description: '新米エンジニア向け質問テンプレート'
+title: 'question: '
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 質問テンプレート
+  
+        このテンプレートは、新卒エンジニアがスムーズに質問できるよう設計されています。
+        以下の各項目に沿って、状況や疑問点をできるだけ具体的に記入してください。
+  - type: textarea
+    id: context
+    attributes:
+      label: '📚 質問の背景'
+      placeholder: 'どのような状況でこの疑問が発生したか、背景（使用している技術、環境、プロジェクトの概要など）を記載してください。'
+    validations:
+      required: false
+  - type: textarea
+    id: question
+    attributes:
+      label: '❓ 質問内容'
+      placeholder: '質問したい内容を具体的に記載してください。'
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: '💡 期待する結果'
+      placeholder: '期待している動作や解決方法、理想的な結果を記載してください。'
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: '🔍 試した解決策'
+      placeholder: '既に試した解決策や調査内容を記載してください。'
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: '🔄 再現手順・状況'
+      placeholder: '問題や疑問に至るまでの操作手順や条件（エラー発生の条件など）を記載してください。'
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+         参考になるログ、スクリーンショット、関連リンクなどがあれば記載してください。
