@@ -1,4 +1,4 @@
-name: ' Question Template'
+name: '❓ Question Template'
 description: '新米エンジニア向け質問テンプレート'
 title: 'question: '
 body:
@@ -44,7 +44,10 @@ body:
       placeholder: '問題や疑問に至るまでの操作手順や条件（エラー発生の条件など）を記載してください。'
     validations:
       required: false
-  - type: markdown
+  - type: textarea
+    id: additional
     attributes:
-      value: |
-         参考になるログ、スクリーンショット、関連リンクなどがあれば記載してください。
+      label: '📎 その他情報'
+      placeholder: '参考になるログ、スクリーンショット、関連リンクなどがあれば記載してください。'
+    validations:
+      required: false
